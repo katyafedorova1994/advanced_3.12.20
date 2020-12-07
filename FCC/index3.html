@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorialize a Number</title>
+</head>
+<body>
+   
+    <script>
+// Return the factorial of the provided integer.
+
+function factorialize(num) {
+    var i = 1;
+        f = 1;
+ 
+    if (num) {
+        for (i; i <= num; i = i + 1) {
+            f = f * i;
+        } 
+    }
+    else {
+        console.log(1); 
+    }
+    console.log(f);
+}
+
+factorialize(5);
+
+    </script>
+</body>
+</html>
