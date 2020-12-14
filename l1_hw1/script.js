@@ -9,8 +9,8 @@ var size = arr.length;
 function randomQuote(){
     randomNum = Math.floor(Math.random() * size);
     
-    // console.log(randomNum);// 1
-    // console.log(arr[randomNum]);// guote[1]
+    console.log(randomNum);// 1
+    console.log(arr[randomNum]);// guote[1]
 
     elementOfArray = arr[randomNum];// guote[1]
     p.innerText = elementOfArray;
