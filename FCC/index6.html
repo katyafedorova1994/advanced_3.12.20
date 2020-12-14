@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm the Ending</title>
+</head>
+<body>
+   
+    <script>
+// Check if a string (first argument, str) ends with the given target string (second argument, target)
+
+function confirmEnding(str, target) {
+    var c = str.length - target.length;
+    console.log(c);//12
+
+    if(str.slice(c) === target){
+        console.log(str.slice(c));//on
+        console.log(true);
+    } else{
+        console.log(false);
+    }
+    
+}
+
+confirmEnding("Congratulation", "on");
+
+
+
+    </script>
+</body>
+</html>

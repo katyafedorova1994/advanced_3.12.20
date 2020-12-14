@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truncate a String</title>
+</head>
+<body>
+
+    <script>
+// Truncate a string (first argument) if it is longer than the given maximum string length (second argument)
+
+function truncateString(str, num) {
+    if(num <= str.length){
+        var b = str.slice(0, num);
+        console.log(b + "...");
+    } else{
+        console.log(str);
+    }
+
+}
+truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2)
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
+truncateString("A-", 1)
+    </script>
+</body>
+</html>
