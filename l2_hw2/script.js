@@ -77,7 +77,7 @@ function displayData(value) {
     temperature.innerText = kToC(value.main.temp) + "C";
     humidity.innerText = value.main.humidity + "%";
     pressure.innerText = value.main.pressure + "gPa";
-    windSpeed.innerText = value.wind.speed + "m/s";
+    windSpeed.innerText = value.wind.speed + "km/h";
     cityShow.innerText = value.name;
     now = new Date().toLocaleDateString(); // 13.12.2020
     weatherSummary.innerText =  "Weather on " + now;
