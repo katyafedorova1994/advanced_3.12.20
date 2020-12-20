@@ -11,14 +11,21 @@
 // Check if a value is classified as a boolean primitive. Return true or false
 
 function booWho(bool) {
-  if (bool === true || bool === false) {//ili
-    return true
-  } else {
-    return false
-  }
+  return typeof bool === "boolean";
 }
 
-booWho(true);
+console.log(booWho(null));
+
+
+// function booWho(bool) {
+//   if (bool === true || bool === false) {//ili
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
+// booWho(true);
     </script>
 </body>
 </html>

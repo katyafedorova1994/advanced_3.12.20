@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Case a Sentence</title>
+</head>
+<body>
+
+    <script>
+// Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+
+function titleCase(str) {
+  var lower = str.toLowerCase();
+  var a = lower.split(" ");
+  var arr = [];
+    for(var i = 0; i < a.length; i++){
+      var b = a[i][0].toUpperCase();
+      var c = a[i].replace(a[i][0], b);
+      arr.push(c);
+      var d = arr.join(" ");
+    } 
+  return d;
+
+ }
+ 
+titleCase("I'm a little tea pot");
+    </script>
+</body>
+</html>

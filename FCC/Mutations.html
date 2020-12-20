@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutations</title>
+</head>
+<body>
+
+    <script>
+// Return true if the string in the first element of the array contains all of the letters of the string in the second element of the array
+
+function mutation(arr) {
+  var a1 = arr[1].toLowerCase();
+  var a = arr[0].toLowerCase();
+  for (var i = 0; i < a1.length; i++) {
+    if (a.indexOf(a1[i]) === -1) {// не найдено
+      return false;
+    }
+  }
+  return true;
+}
+
+mutation(["floor", "for"]);
+
+
+
+    </script>
+</body>
+</html>
